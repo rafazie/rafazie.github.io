@@ -1,0 +1,27 @@
+﻿/* Font Styles */
+:root {
+    --font-primary: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Font Secondary Inherits Font Primary */
+:root {
+    --font-secondary: var(--font-primary);
+}
+
+/* Font Sizes */
+:root {
+    --font-size-base: 0.875rem;
+}
+
+/* Example Usage */
+body {
+    font-family: var(--font-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-secondary);
+}
+
+p {
+    font-size: var(--font-size-base);
+}

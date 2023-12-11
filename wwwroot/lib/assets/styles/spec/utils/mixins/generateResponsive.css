@@ -1,0 +1,13 @@
+﻿/* Responsive Suffix Generator */
+@mixin generateResponsive() {
+    @each var(--breakpoint) in var(--breakpoints) {
+        var(--breakpointAlias) : nth(var(--breakpoint), 1) !global;
+        var(--breakpointCondition) : nth(var(--breakpoint), 2);
+
+        @include mediaQueryCondition(var(--breakpointAlias)) {
+            @content;
+        }
+
+        var(--breakpointAlias): null !global;
+    }
+}

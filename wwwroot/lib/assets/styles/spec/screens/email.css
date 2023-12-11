@@ -1,0 +1,54 @@
+﻿.email-app .email-side-nav {
+    background: var(--default-white);
+    position: fixed;
+    border-right: 1px solid var(--border-color);
+    float: left;
+    width: 250px;
+    transition: all 0.3s ease-in-out;
+}
+
+.email-app .email-wrapper {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    min-height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+    .email-app .email-wrapper .email-list {
+        position: relative;
+        padding: 0;
+        width: 100%;
+        overflow-y: hidden;
+        background-color: var(--default-white);
+        height: calc(100vh - var(--header-height));
+    }
+
+    .email-app .email-wrapper .email-content {
+        float: left;
+        width: 60%;
+        position: relative;
+        padding: 0;
+        background-color: var(--default-white);
+    }   
+        &.no-inbox-view
+
+        {
+            width: 100%;
+        }
+
+.email-app .email-wrapper .email-content .email-compose {
+    position: relative;
+}
+
+    .email-app .email-wrapper .email-content .email-compose .email-compose-body {
+        padding: 30px 20px;
+    }
+
+.email-app.side-active .email-side-nav {
+    left: 0;
+}
+
+.email-app.side-active .email-wrapper {
+    left: 250px;
+}

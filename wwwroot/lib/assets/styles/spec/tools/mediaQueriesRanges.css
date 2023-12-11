@@ -1,0 +1,19 @@
+﻿/* General Media Query */
+@media only screen and (var(--condition)) {
+    /* Your styles for General Media Query */
+}
+
+/* All Above Media Query */
+@media screen and (min-width: var(--breakpoint)) {
+    /* Your styles for All Above Media Query */
+}
+
+/* All Under Media Query */
+@media screen and (max-width: var(--breakpoint - 1px)) {
+    /* Your styles for All Under Media Query */
+}
+
+/* Between Two Devices Media Query */
+@media screen and (min-width: var(--start)) and (max-width: var(--end - 1px)) {
+    /* Your styles for Between Two Devices Media Query */
+}

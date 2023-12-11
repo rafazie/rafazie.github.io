@@ -1,0 +1,94 @@
+/* Converted CSS for .fc */
+.fc {
+	background-color: var(--default-white);
+	border: 1px solid var(--border-color);
+}
+
+	.fc th {
+		text-align: center;
+		padding: 15px;
+		background-color: transparent;
+		color: var(--default-text-color);
+		font-size: 12px;
+		text-transform: uppercase;
+		border-right-width: 0;
+		border-left-width: 0;
+	}
+
+	.fc button {
+		background-color: var(--default-white);
+		background-image: none;
+		height: 37px;
+		padding: 0 15px;
+		color: darken(var(--default-text-color), 10%);
+	}
+		&.fc-state-default
+
+		{
+			border-color: var(--border-color);
+			box-shadow: none;
+		}
+
+		&.fc-state-active {
+			box-shadow: none;
+			background-color: var(--border-color);
+		}
+
+
+/* Converted CSS for .fc-toolbar */
+.fc-toolbar {
+	padding: 20px 20px 0;
+}
+
+/* Converted CSS for .fc-view and .fc-view > table */
+.fc-view,
+.fc-view > table {
+	background-color: var(--default-white);
+}
+
+/* Converted CSS for .fc-basic-view td.fc-day-number and .fc-basic-view td.fc-week-number span */
+.fc-basic-view td.fc-day-number,
+.fc-basic-view td.fc-week-number span {
+	padding: 7px 15px;
+}
+
+/* Converted CSS for .fc-unthemed */
+.fc-unthemed {
+	.fc-content, .fc-divider, .fc-popover, .fc-row, tbody, td, th, thead
+
+{
+	border-color: var(--border-color);
+}
+
+.fc-today {
+	background-color: transparent;
+}
+
+}
+
+/* Converted CSS for .fc-basic-view */
+.fc-basic-view .fc-day-number.fc-today {
+	background-color: var(--default-info);
+	color: var(--default-white);
+	display: inline-block;
+	float: right;
+	border-radius: 50%;
+	padding: 6px 8px;
+	line-height: 1;
+	margin: 4px 4px 0 0;
+}
+
+/* Converted CSS for .fc-event-container */
+.fc-event-container .fc-event {
+	border-radius: 0;
+	border: 0;
+	background-color: var(--inverse-info);
+	color: var(--default-info) !important;
+	font-size: 12px;
+	line-height: 2.5;
+	padding: 0 15px;
+}
+
+.fc-event-container .fc-day-grid-event {
+	margin: 1px 5px 5px;
+}

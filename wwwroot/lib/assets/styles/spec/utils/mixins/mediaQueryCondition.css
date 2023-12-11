@@ -1,0 +1,21 @@
+﻿/* Media Queries Generator */
+@mixin mediaQueryCondition(var(--mq)) {
+    var(--breakpointFound): false;
+
+    @each var(--breakpoint) in var(--breakpoints) {
+        var(--alias): nth(var(--breakpoint), 1);
+        var(--condition): nth(var(--breakpoint), 2);
+
+        @if var(--mq) == var(--alias) and var(--condition) {
+            var(--breakpointFound): true;
+
+            @media var(--condition) {
+                @content;
+            }
+        }
+    }
+
+    @if var(--breakpointFound) == false {
+        @warn "Oops! Breakpoint ‘#{var(--mq)}’ does not exist \:";
+    }
+}

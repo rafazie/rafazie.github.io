@@ -1,0 +1,94 @@
+﻿/* Variables */
+:root {
+    --responsive: true;
+}
+
+/* Centering */
+.centerY {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.centerX {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.centerXY {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Responsive Centering */
+@media screen and (min-width: $breakpoint-sm) {
+    .centerY\@sm {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .centerX\@sm {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .centerXY\@sm {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+    .centerY\@md {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .centerX\@md {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .centerXY\@md {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+    .centerY\@lg {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .centerX\@lg {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .centerXY\@lg {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (min-width: $breakpoint-xl) {
+    .centerY\@xl {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .centerX\@xl {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .centerXY\@xl {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
